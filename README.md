@@ -29,10 +29,8 @@ The DopplerFi sender is based on 802.11 reference design in WARP. The frequency 
 
 ### receiver(GNUradio + MATLAB)
 The DopplerFi receiver in BLE is built on GMSK loopback. The RSSI block is used to calculate RSSI for received signal.
-
-Copy the RSSI folder into the path
-
-Build the RSSI block in GNUradio
+1.Copy the RSSI folder into the path.
+2.Build the RSSI block in GNUradio
     cd  /gunradio/build
     make 
     sudo make install
