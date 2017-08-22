@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="my__RSSI__ccf__impl_8h" kind="file">
+    <compoundname>my_RSSI_ccf_impl.h</compoundname>
+    <includes refid="my__RSSI__ccf_8h" local="no">RSSI/my_RSSI_ccf.h</includes>
+    <incdepgraph>
+      <node id="17">
+        <label>RSSI/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="16">
+        <label>RSSI/my_RSSI_ccf.h</label>
+        <link refid="my__RSSI__ccf_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>my_RSSI_ccf_impl.h</label>
+        <link refid="my_RSSI_ccf_impl.h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>gnuradio/block.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classgr_1_1RSSI_1_1my__RSSI__ccf__impl" prot="public">gr::RSSI::my_RSSI_ccf_impl</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1RSSI">gr::RSSI</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/lib/my_RSSI_ccf_impl.h"/>
+  </compounddef>
+</doxygen>

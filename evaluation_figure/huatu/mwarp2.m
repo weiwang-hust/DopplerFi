@@ -1,0 +1,45 @@
+clear;
+data  = xlsread('warp0727_plot.xlsx', 'A2:M11');
+distance1=zeros(6,1);
+warp_ber_los=zeros(6,1);
+warp_throughput2_los=zeros(6,1);
+distance1(1:6,1)=data(1:6,1);
+warp_ber_los(1:6,1)=[1 1 1 1 1 1]'-data(1:6,11);
+warp_throughput2_los(1:6,1)=1e6/140*data(1:6,11);
+% [hAx,hLine1,hLine2]=plotyy(distance,warp_ber_los,distance,warp_throughput_los);
+% set(hLine1,'Marker','*');
+% set(hLine2,'Marker','^');
+% ylabel(hAx(1),'BER');
+% ylabel(hAx(2),'Throughput');
+% xlabel('Distance(m)');
+% title('BER and throughout of different distance');
+
+distance2=zeros(4,1);
+warp_ber_nlos=zeros(4,1);
+warp_throughput2_nlos=zeros(4,1);
+distance2(1:4,1)=data(7:10,1);
+warp_throughput2_nlos(1:4,1)=1e6/140*data(7:10,11);
+warp_ber_nlos(1:4,1)=[1 1 1 1]'-data(7:10,11);
+
+% [hAx,hLine1,hLine2]=plotyy(distance,warp_ber,distance,warp_throughput);
+% set(hLine1,'Marker','*');
+% set(hLine2,'Marker','^');
+% ylabel(hAx(1),'BER');
+% ylabel(hAx(2),'Throughput');
+% xlabel('Distance(m)');
+% title('BER and throughout of different distance');
+figure;
+plot(distance1,warp_ber_los,'-*','linewidth',1.5);
+hold on;plot(distance2,warp_ber_nlos,'-^','linewidth',1.5);
+h1=legend('LOS','NLOS');
+set(h1,'FontSize',14);
+ylabel('BER','FontSize',14);
+xlabel('Distance(m)','FontSize',14);
+
+figure;
+plot(distance1,warp_throughput2_los,'-*','linewidth',1.5);
+hold on;plot(distance2,warp_throughput2_nlos,'-^','linewidth',1.5);
+h2=legend('LOS','NLOS');
+set(h2,'FontSize',14);
+ylabel('Throughput','FontSize',14);
+xlabel('Distance(m)','FontSize',14);

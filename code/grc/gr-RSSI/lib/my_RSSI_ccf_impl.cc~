@@ -1,0 +1,116 @@
+/* -*- c++ -*- */
+/* 
+ * Copyright 2017 <+YOU OR YOUR COMPANY+>.
+ * 
+ * This is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3, or (at your option)
+ * any later version.
+ * 
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this software; see the file COPYING.  If not, write to
+ * the Free Software Foundation, Inc., 51 Franklin Street,
+ * Boston, MA 02110-1301, USA.
+ */
+
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
+#include <gnuradio/io_signature.h>
+#include <cmath>
+#include "my_RSSI_ccf_impl.h"
+
+namespace gr {
+  namespace RSSI {
+
+    my_RSSI_ccf::sptr
+    my_RSSI_ccf::make(float RSSI_threshold)
+    {
+      return gnuradio::get_initial_sptr
+        (new my_RSSI_ccf_impl(RSSI_threshold));
+    }
+
+    /*
+     * The private constructor
+     */
+    my_RSSI_ccf_impl::my_RSSI_ccf_impl(float RSSI_threshold)
+      : gr::block("my_RSSI_ccf",
+              gr::io_signature::make(1, 1, sizeof(gr_complex)),
+              gr::io_signature::make2(1, 2, sizeof(gr_complex), sizeof(char)))
+    {
+	threshold = RSSI_threshold;
+	
+	}
+
+    /*
+     * Our virtual destructor.
+     */
+    my_RSSI_ccf_impl::~my_RSSI_ccf_impl()
+    {
+    }
+
+    void
+    my_RSSI_ccf_impl::forecast (int noutput_items, gr_vector_int &ninput_items_required)
+    {
+      /* <+forecast+> e.g. ninput_items_required[0] = noutput_items */
+	ninput_items_required[0] = noutput_items;
+	
+    }
+
+    int
+    my_RSSI_ccf_impl::general_work (int noutput_items,
+                       gr_vector_int &ninput_items,
+                       gr_vector_const_void_star &input_items,
+                       gr_vector_void_star &output_items)
+    {
+      const gr_complex *in = (const gr_complex *) input_items[0];
+      gr_complex *out = (gr_complex *) output_items[0];
+	char *RSSI_sign = (char *) output_items[1];
+	
+	unsigned int RSSI_Len = 8;
+	float RSSI_value = 0;
+      // Do <+signal processing+>
+	for(int i = 0; i < RSSI_Len; i++)
+	{
+		out[i] = 0;
+	}
+
+	for(int i = RSSI_Len - 1; i < noutput_items; i++)
+	{
+		RSSI_value = 0;
+		for(int j = 0; j < RSSI_Len; j++)	// calculate RSSI
+			RSSI_value = RSSI_value + sqrt(in[i-j].real()*in[i-j].real() + in[i-j].imag()*in[i-j].imag());
+
+		if(RSSI_value >= threshold)
+		{
+			out[i] = in[i];
+			RSSI_sign[i] = 1;
+		}
+		else
+		{
+			out[i] = 0;
+			RSSI_sign[i] = 0;
+		}
+		//if(RSSI_sign[i])std::cout << int(RSSI_sign[i]);
+		//if(RSSI_sign[i] == 1 && RSSI_sign[i-1] == 0) std::cout << int(RSSI_sign[i]) << int(RSSI_sign[i-1]);
+		
+	}
+
+
+      // Tell runtime system how many input items we consumed on
+      // each input stream.
+      consume_each (noutput_items);
+
+      // Tell runtime system how many output items we produced.
+      return noutput_items;
+    }
+
+  } /* namespace RSSI */
+} /* namespace gr */
+

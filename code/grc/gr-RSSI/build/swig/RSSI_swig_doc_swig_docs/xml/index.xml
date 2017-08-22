@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="classgr_1_1RSSI_1_1my__RSSI__ccf" kind="class"><name>gr::RSSI::my_RSSI_ccf</name>
+    <member refid="classgr_1_1RSSI_1_1my__RSSI__ccf_1aced988c9a1b536a594c7ee0c5d443681" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1RSSI_1_1my__RSSI__ccf_1a4445e1f7e3489009ac52b1eb720f5b92" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1RSSI" kind="namespace"><name>gr::RSSI</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1af78355946d50ab2ecf2b0fc0a5c1b8de" kind="define"><name>RSSI_API</name></member>
+  </compound>
+  <compound refid="my__RSSI__ccf_8h" kind="file"><name>my_RSSI_ccf.h</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/include</name>
+  </compound>
+  <compound refid="dir_b4925d90fa1e204078432b9964c23b5f" kind="dir"><name>/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/include/RSSI</name>
+  </compound>
+</doxygenindex>

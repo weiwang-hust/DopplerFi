@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1RSSI_1_1my__RSSI__ccf__impl" kind="class" prot="public">
+    <compoundname>gr::RSSI::my_RSSI_ccf_impl</compoundname>
+    <basecompoundref refid="classgr_1_1RSSI_1_1my__RSSI__ccf" prot="public" virt="non-virtual">gr::RSSI::my_RSSI_ccf</basecompoundref>
+    <includes refid="my__RSSI__ccf__impl_8h" local="no">my_RSSI_ccf_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1RSSI_1_1my__RSSI__ccf__impl_1a2504c7d8fbf01cda8e696bcc7dac655d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::RSSI::my_RSSI_ccf_impl::threshold</definition>
+        <argsstring></argsstring>
+        <name>threshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/lib/my_RSSI_ccf_impl.h" line="33" column="1" bodyfile="/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/lib/my_RSSI_ccf_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1RSSI_1_1my__RSSI__ccf__impl_1a59b4c491b414bd6169d7b871f293c40e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::RSSI::my_RSSI_ccf_impl::my_RSSI_ccf_impl</definition>
+        <argsstring>(float RSSI_threshold)</argsstring>
+        <name>my_RSSI_ccf_impl</name>
+        <param>
+          <type>float</type>
+          <declname>RSSI_threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/lib/my_RSSI_ccf_impl.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1RSSI_1_1my__RSSI__ccf__impl_1a6053ef34817594da33c6ce4b198f217f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::RSSI::my_RSSI_ccf_impl::~my_RSSI_ccf_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~my_RSSI_ccf_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/lib/my_RSSI_ccf_impl.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1RSSI_1_1my__RSSI__ccf__impl_1a7363f58496d1778d4201ae8ad768b878" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::RSSI::my_RSSI_ccf_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/lib/my_RSSI_ccf_impl.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1RSSI_1_1my__RSSI__ccf__impl_1a228511662e23a52a1490df3bdccdbd3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::RSSI::my_RSSI_ccf_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/lib/my_RSSI_ccf_impl.h" line="42" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>gr::RSSI::my_RSSI_ccf_impl</label>
+        <link refid="classgr_1_1RSSI_1_1my__RSSI__ccf__impl"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gr::block</label>
+      </node>
+      <node id="6">
+        <label>gr::RSSI::my_RSSI_ccf</label>
+        <link refid="classgr_1_1RSSI_1_1my__RSSI__ccf"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>gr::RSSI::my_RSSI_ccf_impl</label>
+        <link refid="classgr_1_1RSSI_1_1my__RSSI__ccf__impl"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gr::block</label>
+      </node>
+      <node id="9">
+        <label>gr::RSSI::my_RSSI_ccf</label>
+        <link refid="classgr_1_1RSSI_1_1my__RSSI__ccf"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/lib/my_RSSI_ccf_impl.h" line="30" column="1" bodyfile="/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/lib/my_RSSI_ccf_impl.h" bodystart="29" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classgr_1_1RSSI_1_1my__RSSI__ccf__impl_1a7363f58496d1778d4201ae8ad768b878" prot="public" virt="non-virtual"><scope>gr::RSSI::my_RSSI_ccf_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1RSSI_1_1my__RSSI__ccf__impl_1a228511662e23a52a1490df3bdccdbd3f" prot="public" virt="non-virtual"><scope>gr::RSSI::my_RSSI_ccf_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1RSSI_1_1my__RSSI__ccf_1a4445e1f7e3489009ac52b1eb720f5b92" prot="public" virt="non-virtual"><scope>gr::RSSI::my_RSSI_ccf_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1RSSI_1_1my__RSSI__ccf__impl_1a59b4c491b414bd6169d7b871f293c40e" prot="public" virt="non-virtual"><scope>gr::RSSI::my_RSSI_ccf_impl</scope><name>my_RSSI_ccf_impl</name></member>
+      <member refid="classgr_1_1RSSI_1_1my__RSSI__ccf_1aced988c9a1b536a594c7ee0c5d443681" prot="public" virt="non-virtual"><scope>gr::RSSI::my_RSSI_ccf_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1RSSI_1_1my__RSSI__ccf__impl_1a2504c7d8fbf01cda8e696bcc7dac655d" prot="private" virt="non-virtual"><scope>gr::RSSI::my_RSSI_ccf_impl</scope><name>threshold</name></member>
+      <member refid="classgr_1_1RSSI_1_1my__RSSI__ccf__impl_1a6053ef34817594da33c6ce4b198f217f" prot="public" virt="non-virtual"><scope>gr::RSSI::my_RSSI_ccf_impl</scope><name>~my_RSSI_ccf_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

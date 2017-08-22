@@ -1,0 +1,12 @@
+/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/build/swig/CMakeFiles/RSSI_swig_swig_2d0df.dir
+/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/build/swig/CMakeFiles/RSSI_swig_swig_doc.dir
+/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/build/swig/CMakeFiles/_RSSI_swig.dir
+/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/build/swig/CMakeFiles/_RSSI_swig_doc_tag.dir
+/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/build/swig/CMakeFiles/_RSSI_swig_swig_tag.dir
+/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/build/docs/doxygen/CMakeFiles/doxygen_target.dir
+/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/build/lib/CMakeFiles/gnuradio-RSSI.dir
+/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/build/apps/CMakeFiles/pygen_apps_9a6dd.dir
+/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/build/python/CMakeFiles/pygen_python_fe101.dir
+/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/build/swig/CMakeFiles/pygen_swig_ded35.dir
+/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/build/lib/CMakeFiles/test-RSSI.dir
+/home/hesy/GNUradio/gnuradio-3.7.10/gr-RSSI/build/CMakeFiles/uninstall.dir
