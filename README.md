@@ -14,9 +14,9 @@ This is the source code for DopplerFi, which is a cross-technology communication
 ### WARP
 [WARP Project](http://warpproject.org/trac)
 
-802.11 reference design
+Install 802.11 reference design
 
-WAPRLAB
+Install WAPRLAB
 
 
 ### Ubertooth
@@ -26,6 +26,8 @@ WAPRLAB
 ## WiFi2BLE
 ### transmitter(802.11 reference design)
 The DopplerFi sender is based on 802.11 reference design in WARP. The frequency offset cannot be shifted so the DopplerFi in WiFi sender is not be modified. 
+
+use the file in folder to transmit Wi-Fi signal. 
 
 ### receiver(GNUradio + MATLAB)
 The DopplerFi receiver in BLE is built on GMSK loopback. The RSSI block is used to calculate RSSI for received signal.
@@ -39,9 +41,12 @@ The GRC project **receiver signal.grc** is used to receive Wi-Fi frame from WARP
 The **GMSK\_receiver.grc** is the receiver chain.
 
 the output of GMSK receiver is used to demap in MATLAB.
+the file in matlab is used to decode and calculate the BER
 
 ## BLE2WiFi
 ### transmitter(Ubertooth + WARPLAB)
-The DopplerFi sender in BLE is based on Ubertooth. 
+find the bluetooth file in folder and change the frequency offset in register
 
 ### receiver(WARPLAB + MATLAB)
+1. file to receive DopperFi bit with CSI
+2. file to calculate
